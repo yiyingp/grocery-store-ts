@@ -13,7 +13,7 @@ interface ProductListProps {
     selectedItem?: Product;
     filteredProduct: Product[];
     onEditClick: (itemId: number) => void;
-    onDeleteClick: (itemId: number) => void;
+    onDeleteClick: (itemId: number) => void; // define a funtion/method to delete a product
 }
 
 const ProductList = ({ selectedItem, filteredProduct, onEditClick, onDeleteClick }: ProductListProps) => {
