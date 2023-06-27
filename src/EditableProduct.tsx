@@ -13,6 +13,11 @@ type ProductFormProps = Product & {
     onCancelClick: () => void;
 }
 
+// interface ProductFormProps extends Product {
+//     onSaveClick: (editedProduct: Product) => void;
+//     onCancelClick: () => void;
+// }
+
 const ProductFrom = ({ id, name, category, price, stocked, onSaveClick, onCancelClick }: ProductFormProps) => {
     const [editedProduct, setEditedProduct] = useState<Product>({ id, name, category, price, stocked });
 
