@@ -19,7 +19,7 @@ const ProductFrom = ({ id, name, category, price, stocked, onSaveClick, onCancel
     function handleInputChange(e: React.ChangeEvent<HTMLInputElement>) {
         setEditedProduct(prevProduct => ({
             ...prevProduct,
-            [e.target.name]: e.target.value === 'checkbox' ? e.target.checked : e.target.value,
+            [e.target.name]: e.target.type === 'checkbox' ? e.target.checked : e.target.value,
         }));
     }
     
